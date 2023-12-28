@@ -1,8 +1,8 @@
 <?php
+require 'vendor/autoload.php';
 
-require_once __DIR__ . '/vendor/autoload.php';
+use Carbon\Carbon;
+ 
+$date = Carbon::now();
 
-use HelloWorld\Hello;
-
-$hello = new Hello();
-echo $hello->getMessage();
+echo $date->toDayDateTimeString();
