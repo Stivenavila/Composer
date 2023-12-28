@@ -1,5 +1,5 @@
 #!/bin/bash
 cd /var/www/html
-yum install wget -y
-wget https://getcomposer.org/composer.phar
-php composer.phar install
+sudo yum install wget -y
+sudo wget https://getcomposer.org/composer.phar
+sudo php composer.phar install
