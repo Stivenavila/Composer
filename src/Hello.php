@@ -1,5 +1,5 @@
 <?php
-namespace Rivsen\Demo;
+namespace stivenavilam\Demo;
 
 class Hello
 {
