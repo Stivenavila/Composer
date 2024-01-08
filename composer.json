@@ -11,5 +11,7 @@
     "autoload": {
         "psr-4": { "stivenavilam\\Demo\\": "src" }
     },
-    "require": {}
+    "require": {
+        "nesbot/carbon": "^2.72"
+    }
 }
