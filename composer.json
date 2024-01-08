@@ -1,16 +1,4 @@
 {
-    "name": "stivenavilam/hello-world",
-    "description": "this is a hello world repo for composer.",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "stivenavilam",
-            "email": "stivenavilam@gmail.com"
-        }
-    ],
-    "autoload": {
-        "psr-4": { "stivenavilam\\Demo\\": "src" }
-    },
     "require": {
         "nesbot/carbon": "^2.72"
     }
