@@ -4,7 +4,7 @@ files:
     - source: ./
       destination: /var/www/release/
 permissions:
-    - object: /var/www/html/drupal
+    - object: /var/www/html/drupal/
       owner: www-data
       group: www-data
 hooks:
