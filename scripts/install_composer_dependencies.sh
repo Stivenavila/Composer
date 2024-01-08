@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "llegue"
-cd /var/www/html/drupal
+cd /var/www/html
 yum install wget -y
 yum install php
 rm composer.phar
