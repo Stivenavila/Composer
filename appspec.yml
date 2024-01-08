@@ -1,30 +1,17 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /var/www/release
-    overwrite: true
+    - source: ./
+      destination: /var/www/release/
+permissions:
+    - object: /var/www/html/drupal
+      owner: www-data
+      group: www-data
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
-      timeout: 480
-      runas: root
-      script:
-        - /bin/bash scripts/install_dependencies.sh
   AfterInstall:
     - location: scripts/install_composer_dependencies.sh
-      timeout: 480
-      runas: root
-      script:
-        - /bin/bash scripts/install_composer_dependencies.sh
     - location: scripts/start_server.sh
-      timeout: 480
-      runas: root
-      script:
-        - /bin/bash scripts/start_server.sh
   ApplicationStop:
     - location: scripts/stop_server.sh
-      timeout: 480
-      runas: root
-      script:
-        - /bin/bash scripts/stop_server.sh
