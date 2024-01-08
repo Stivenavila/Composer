@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "hola"
 cd /var/www/html
 yum install wget -y
 rm composer.phar
