@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "llegue"
 cd /var/www/html/drupal
 yum install wget -y
 yum install php
