@@ -6,10 +6,6 @@ files:
     overwrite: true
     file_exists_behavior: OVERWRITE
 hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies.sh
-      timeout: 300
-      runas: root
   AfterInstall:
     - location: scripts/install_composer_dependencies.sh
       timeout: 300
